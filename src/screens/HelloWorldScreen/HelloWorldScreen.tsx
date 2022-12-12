@@ -1,8 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { HelloWorldScreenProps } from '@navigation/HomeNavigator';
 
-export function HelloWorldScreen({ navigation }: HelloWorldScreenProps) {
+export function HelloWorldScreen() {
   return (
     <View>
       <Text>Hello</Text>

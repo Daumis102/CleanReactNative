@@ -12,7 +12,8 @@ export const RootNavigator = () => {
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
-        }}>
+        }}
+        initialRouteName={'HomeNavigator'}>
         <Stack.Screen component={HomeNavigator} name="HomeNavigator" />
       </Stack.Navigator>
     </NavigationContainer>

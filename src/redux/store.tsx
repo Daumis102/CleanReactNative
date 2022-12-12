@@ -2,9 +2,12 @@ import createSagaMiddleware from 'redux-saga';
 import { configureStore } from '@reduxjs/toolkit';
 import { useDispatch } from 'react-redux';
 import rootSaga from '@redux/sagas/rootSaga';
+import { helloWorldSlice } from '@redux/slices/HelloWorldSlice';
 
 const sagaMiddleware = createSagaMiddleware();
-const rootReducer = {};
+const rootReducer = {
+  helloWorld: helloWorldSlice.reducer,
+};
 export const store = configureStore({
   reducer: rootReducer,
   middleware: [sagaMiddleware],
